@@ -30,6 +30,9 @@ appropriate contexts on pages as a whole. Most of the time you will
 first want to develop the component in isolation using the styleguide
 framework detailed in the next section.
 
+These 'static' pages are actually .html.erb files so they have the additional
+benefits of using ruby code for loops, partials, etc.
+
 
 ==== Components via Styleguides
 
