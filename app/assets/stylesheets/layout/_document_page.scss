@@ -1,0 +1,128 @@
+.doc {
+  // This is for the doc area
+  position: relative;
+
+  &.doc-official .doc-content {
+    // This establishes the color for the: header/footer seals, background images, and possible color scheme
+    // ex: class="doc doc-official"
+    // notes: Build additional color schemes in the _modules.scss
+    @extend .fr-box;
+    @extend .fr-box-official;
+
+    background-image: url(../images/elements/fd-doc-official-seal.png);
+    background-repeat: no-repeat;
+    background-position: 75px 50px;
+  }
+
+  .doc-nav {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 53px;
+    margin-top: 22px;
+    background-color: #E6E6E5;
+    border-right: 3px solid #DCDDDE;
+    color: #A7A9AC;
+
+    &> li {
+      position: relative;
+      padding: 16px 0;
+      list-style-type: none;
+      cursor: pointer;
+
+      i {font-size: 1.188em;}
+
+      span.nav-caret {
+        display: none;
+        position: absolute;
+
+        &:before, &:after {
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid #E0E0E0;
+          position: absolute;
+          content: '';
+          right: -24px;
+          top: 2px;
+        }
+        &:before {
+          border-top: 12px solid transparent;
+          border-bottom: 12px solid transparent;
+          border-left: 12px solid #DCDDDE;
+          right: -29px;
+          top: 0px;
+        }
+      }
+      &.open {
+        background-color: #E0E0E0;
+        span.nav-caret {display: inline-block;}
+      }
+      &:hover  {
+        background-color: #E0E0E0;
+        color: $color-enhanced;
+      }
+      &.spacing {margin-top: 15px}
+    }
+  }
+  .doc-content {
+    margin-left: 50px;
+    z-index: 1;
+    width: 744px;
+
+    .content-block {
+      padding: 35px 100px 20px 30px !important;
+      p {
+        font-family: $font-family-serif;
+        font: 1.063em;
+      }
+      h4 {
+        font-size: 1.125em;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      h5 {font-size: 1.063em;}
+    }
+  }
+  .doc-aside {
+    position: absolute;
+    top:30px;
+    right: 0;
+    z-index: 2;
+    width: 248px;
+
+    .content-block{
+      font-size: 0.938em;
+      line-height: 1.250em;
+      h4 {
+        font-size: 1.063em;
+        color: #000;
+        font-weight: 700;
+      }
+      h5 {padding-left: 5px;}
+      p{
+        text-indent: -0.438em;
+        padding-left: 10px;
+
+        a{
+          display: block;
+          padding-left: 5px;
+        }
+      }
+      ul li {list-style-type: none;}
+      dl {
+        padding: 0 0 0.8125em 0.375em;
+        dt {font-weight: 600;}
+        dd {
+          margin: 0;
+          text-indent: -.688em;
+          padding-left: 1.125em;
+        }
+      }
+    }
+    .doc-details {
+      margin-top: 30px;
+    }
+  }
+}
