@@ -1,4 +1,4 @@
-== FR2 Style
+## FR2 Style
 
 This repo is a simplification of the FR2 project that powers FederalRegister.gov
 and is meant to be used for UI development (CSS, JS) without the need to run the
@@ -12,15 +12,15 @@ portions of the design inherit the bootstrap settings. The mixins and variables
 from bootstrap are available everywhere however.
 
 
-=== Usage
+### Usage
 
-==== Starting the server
+#### Starting the server
 
 * Run `bundle install` from the project root.
 * Run `rails s` from the project root.
 
 
-==== Static files
+#### Static files
 
 Static files should be placed in `app/views/static_files`. To view a file
 go to `http://localhost:3000/static_files/name_of_your_static_file`.
@@ -34,7 +34,7 @@ These 'static' pages are actually .html.erb files so they have the additional
 benefits of using ruby code for loops, partials, etc.
 
 
-==== Components via Styleguides
+#### Components via Styleguides
 
 This project includes the 'stylin' gem (http://rubygems.org/gems/stylin) to
 encourage the use of small components that work in isolation before they are
@@ -59,7 +59,7 @@ By first building components via the styleguide framework css can be easily modu
 and less dependent on it's context in a page as a whole.
 
 
-==== Font Icons
+#### Font Icons
 
 The FR2 project uses font based icons. They have already been added to this projects
 asset pipeline. Using our account at http://icomoon.com/app you can add additional
