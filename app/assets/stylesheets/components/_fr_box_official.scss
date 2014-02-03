@@ -11,21 +11,17 @@ Styleguide 1.1.1 FR Box Official
 
 .fr-box {
   &.fr-box-official {
+    padding-left: 0;
     @include fr-doc($color-official, $color-official-light);
 
-    .fr-seal-stamp { @extend .col-md-2; }
-    .fr-seal-content { @extend .col-md-10; }
-  }
-}
-
-.fr-seal-block {
-  .fr-stamp {
-    // Sprites for Seal Stamp for the hover state
-    // ex: class="fr-stamp fr-stamp-official"
-    @include square(100px);
-    margin-left: 15px;
-    display: inline-block;
-    background-image: url(../images/elements/fd-doc-official-seal-mini-w.png);
-    background-repeat: no-repeat;
+    .fr-seal-stamp { 
+      @include square(100px);
+      margin-right: 20px;
+      float: left;
+      margin-left: 15px;
+      display: inline-block;
+      background-image: url(../images/elements/fd-doc-official-seal-mini-w.png);
+      background-repeat: no-repeat;
+    }
   }
 }

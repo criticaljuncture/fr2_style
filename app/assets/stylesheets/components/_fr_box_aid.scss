@@ -1,0 +1,28 @@
+/*
+A box used for containing the main aid content on Federal Register pages.
+
+The block header here contains css for the aid seal.
+
+.fr-box-aid - Used only for aid content
+
+Styleguide 1.1.3 FR Box Reading Aid
+*/
+
+
+.fr-box {
+  &.fr-box-aid {
+    padding-left: 0;
+    background-color: $color-aid-light;
+    @include fr-doc($color-aid, $color-aid-light);
+
+    .fr-seal-stamp { 
+      @include square(100px);
+      margin-right: 20px;
+      float: left;
+      margin-left: 15px;
+      display: inline-block;
+      background-image: url(../images/elements/fd-doc-aid-seal-mini-w.png);
+      background-repeat: no-repeat;
+    }
+  }
+}

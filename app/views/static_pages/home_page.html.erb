@@ -49,33 +49,202 @@
 
 
 
-<!-- FR.GOV AGENCY BROWSE (from nav) START -->
-<table class="cabinet_agencies default">
-  <thead>
-    <tr>
-      <th><h2>Explore Agencies</h2></th>
-      <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""></th>
-      <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% 10.times do %>
-      <tr>
-        <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
+<!-- BOOTSTRAP SCOPE START -->
+<div class="bootstrap-scope">
+<!-- BOOTSTRAP SCOPE START -->
 
-        <td class="count_7_days">
-          <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
-        </td>
 
-        <td class="comments_recently_opened">
-          <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<!-- FR.GOV AGENCY BROWSE (from nav) END -->
+
+
+
+
+<div class="wrapper">
+  <div class="container fixed">
+    <div class="clearfix"</div>
+      <div class="row nav-home-carousel">
+        <ul class="col-md-3 nav">
+          <li>
+            <span class="glyphicon glyphicon-book"></span>
+            Money
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-book"></span>
+            Environment</li>
+          <li>
+            <span class="glyphicon glyphicon-book"></span>
+            World</li>
+          <li>
+            <span class="glyphicon glyphicon-book"></span>
+            Science &amp; <br>Technology
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-book"></span>
+            Business &amp; <br>Industry
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-book"></span>
+            Health &amp; <br>Public Welfare
+          </li>
+        </ul>
+        <div class="col-md-9">
+        </div>
+      </div>
+
+      <div class="row">
+      <!-- FR.GOV AGENCY BROWSE (from nav) START -->
+      <table class="cabinet_agencies default col-md-8">
+        <thead>
+          <tr>
+            <th><h3>Explore Agencies</h3></th>
+            <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""></th>
+            <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% 5.times do %>
+            <tr>
+              <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
+
+              <td class="count_7_days">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
+              </td>
+
+              <td class="comments_recently_opened">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <!-- FR.GOV AGENCY BROWSE (from nav) END -->
+      <!-- FR.GOV AGENCY BROWSE (from nav) START -->
+      <table class="cabinet_agencies default col-md-4">
+        <thead>
+          <tr>
+            <th><h3>Explore Topics</h3></th>
+            <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""></th>
+            <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% 5.times do %>
+            <tr>
+              <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
+
+              <td class="count_7_days">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
+              </td>
+
+              <td class="comments_recently_opened">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <!-- FR.GOV AGENCY BROWSE (from nav) END -->
+    </div>
+
+
+      <div class="row">
+        <div classs="col-md-12">
+          <div class="fr-box fr-box-aid">
+            <div class="fr-seal-block fr-seal-block-header">
+              <div class="fr-seal-content">
+                <h6>Document Details</h6>
+                <div class="row fr-seal-meta">
+                  <div class="fr-seal-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit leo non sodales egestas. Sed dapibus facilisis felis sed dictum.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <p>Curabitur egestas faucibus ornare. Vestibulum tellus nunc, tempor sed tempus id, adipiscing sed tortor. Pellentesque ullamcorper suscipit odio ut sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa id odio viverra lacinia. Vestibulum ac eros eros. Nullam vel nibh gravida, imperdiet justo a, pellentesque risus. Morbi aliquam sollicitudin massa quis facilisis. In volutpat ac sem sit amet viverra.</p>
+            </div>
+            <div class="fr-seal-block fr-seal-block-footer">
+              <h6>Document Details</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <!-- FR.GOV AGENCY BROWSE (from nav) START -->
+      <table class="cabinet_agencies default col-md-4">
+        <thead>
+          <tr>
+            <th><h3>Explore Agencies</h3></th>
+            <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""></th>
+            <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% 10.times do %>
+            <tr>
+              <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
+
+              <td class="count_7_days">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
+              </td>
+
+              <td class="comments_recently_opened">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <!-- FR.GOV AGENCY BROWSE (from nav) END -->
+      <!-- FR.GOV AGENCY BROWSE (from nav) START -->
+      <table class="cabinet_agencies default col-md-8">
+        <thead>
+          <tr>
+            <th><h3>Explore Topics</h3></th>
+            <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""></th>
+            <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% 10.times do %>
+            <tr>
+              <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
+
+              <td class="count_7_days">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
+              </td>
+
+              <td class="comments_recently_opened">
+                <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <!-- FR.GOV AGENCY BROWSE (from nav) END -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- BOOTSTRAP SCOPE END -->
+</div>
+<!-- BOOTSTRAP SCOPE END -->
+
+
+
+
+
 
 
 

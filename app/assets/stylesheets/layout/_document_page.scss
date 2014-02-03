@@ -2,7 +2,7 @@
   // This is for the doc area
   position: relative;
 
-  &.doc-official .doc-content {
+  &.doc-official .doc-content{
     // This establishes the color for the: header/footer seals, background images, and possible color scheme
     // ex: class="doc doc-official"
     // notes: Build additional color schemes in the _modules.scss
@@ -14,65 +14,81 @@
     background-position: 75px 50px;
   }
 
-  .doc-nav {
+  &.doc-inspection .doc-content{
+    // This establishes the color for the: header/footer seals, background images, and possible color scheme
+    // ex: class="doc doc-official"
+    // notes: Build additional color schemes in the _modules.scss
+    @extend .fr-box;
+    @extend .fr-box-inspection;
+
+    background-image: url(../images/elements/fd-doc-inspection-seal.png);
+    background-repeat: no-repeat;
+    background-position: 75px 50px;
+  }
+
+  .doc-nav-wrapper {
+    padding-top: 17px;
     position: absolute;
-    top: -3px;
-    left: 0;
-    z-index: 3;
     height: 100%;
     width: 53px;
-    margin-top: 22px;
-    background-color: #E6E6E5;
-    border-right: 3px solid #DCDDDE;
+    z-index: 3;
+    top: 0;
+    left: -68px;
+  }
+  .doc-nav {
     color: #A7A9AC;
+    background-color: #E6E6E5;
+    height: 100%;
 
     &> li {
       position: relative;
       padding: 16px 0;
       list-style-type: none;
       cursor: pointer;
-
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      
       i {font-size: 1.188em;}
-
+      
       span.nav-caret {
         display: none;
         position: absolute;
+        z-index: 15;
 
-        &:before, &:after {
+        &:after {
           border-top: 10px solid transparent;
           border-bottom: 10px solid transparent;
-          border-left: 10px solid #E0E0E0;
+          border-left: 10px solid #d5d5d5;
           position: absolute;
           content: '';
-          right: -24px;
+          right: -30px;
           top: 2px;
-        }
-        &:before {
-          border-top: 12px solid transparent;
-          border-bottom: 12px solid transparent;
-          border-left: 12px solid #DCDDDE;
-          right: -29px;
-          top: 0px;
         }
       }
       &.open {
-        background-color: #E0E0E0;
+        background-color: #d5d5d5;
         span.nav-caret {display: inline-block;}
+        border-top: 2px solid $color-enhanced;
+        border-bottom: 2px solid $color-enhanced;
       }
-      &:hover  {
-        background-color: #E0E0E0;
+      &:hover, &.hover  {
+        background-color: #d5d5d5;
         color: $color-enhanced;
       }
-      &.spacing {margin-top: 15px}
+      &.divider {
+        padding:0;
+        border:0;
+        border-bottom: 1px solid #c4c4c3;
+      }
     }
   }
   .doc-content {
-    margin-left: 50px;
+    margin-left: 68px;
     z-index: 1;
     width: 744px;
 
     .content-block {
-      padding: 35px 100px 20px 30px !important;
+      padding: 35px 130px 20px 30px !important;
       p {
         font-family: $font-family-serif;
         font: 1.063em;

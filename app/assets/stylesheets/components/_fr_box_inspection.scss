@@ -1,0 +1,28 @@
+/*
+A box used for containing the main inspection content on Federal Register pages.
+
+The block header here contains css for the inspection seal.
+
+.fr-box-inspection - Used only for inspection content
+
+Styleguide 1.1.2 FR Box Inspection
+*/
+
+
+.fr-box {
+  &.fr-box-inspection {
+    padding-left: 0;
+    background-color: $color-inspection-light;
+    @include fr-doc($color-inspection, $color-inspection-light);
+
+    .fr-seal-stamp { 
+      @include square(100px);
+      margin-right: 20px;
+      float: left;
+      margin-left: 15px;
+      display: inline-block;
+      background-image: url(../images/elements/fd-doc-inspection-seal-mini-w.png);
+      background-repeat: no-repeat;
+    }
+  }
+}

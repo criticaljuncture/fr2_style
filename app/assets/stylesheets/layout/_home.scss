@@ -1,0 +1,26 @@
+.embedded_search.search_bar {
+  width: 100%;
+}
+
+.nav-home-carousel {
+  @include border-radius(3px);
+  background-color: #f1f1f1;
+  ul {
+    margin: 0;
+    padding: 10px 0;
+    border-right: 2px solid #e0e0e0;
+  }
+  li {
+    position: relative;
+    color: #999;
+    padding: 7px 7px 7px 15px;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 17px;
+
+    span {
+      position: absolute !important;
+      left: -20px;
+    }
+  }
+}
