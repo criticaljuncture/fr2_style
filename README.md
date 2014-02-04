@@ -72,3 +72,14 @@ placed in `app/fonts`.
 Open the file named 'style.css' and copy everything below the @font-face block
 (generally line 11 and down). Replace the content of
 `app/assets/stylesheets/fonts/_icons.scss` with what you copied.
+
+
+#### Javascript
+
+By default this project doesn't include the bootstrap javascript files. If you require
+any of these you should add them individually via the asset pipeline. To do so add them
+to app/assets/javascripts/application.js like:
+`//= require bootstrap/dropdown`
+Be aware that some bootstrap js files are dependent on others - you'll want to include
+them in the proper oder. For more infomation see the bootstrap-sass documentation at
+https://github.com/twbs/bootstrap-sass#javascript.
