@@ -7,20 +7,35 @@
   background-color: #f1f1f1;
   ul {
     margin: 0;
-    padding: 10px 0;
+    padding-right: 0 !important;
     border-right: 2px solid #e0e0e0;
   }
   li {
     position: relative;
     color: #999;
-    padding: 7px 7px 7px 15px;
+    padding: 12px 0px 12px 55px;
     font-weight: bold;
     list-style-type: none;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 19px;
 
     span {
       position: absolute !important;
-      left: -20px;
+      left: 14px;
+      font-size: 30px;
+      vertical-align: middle;
+      margin-top: -6px;
+
+      &.icon-fr2-Lab,
+      &.icon-fr2-Factory,
+      &.icon-fr2-Medicine {
+        margin-top: 3px;
+      }
+    }
+
+    &:hover, &.hover {
+      color: #fff;
+      background-color: #f6a428;
     }
   }
 }
