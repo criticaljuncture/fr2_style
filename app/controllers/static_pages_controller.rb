@@ -1,5 +1,9 @@
 class StaticPagesController < ApplicationController
   def show
-    render params[:id]
+    if params[:local_only] == "1"
+      render params[:id], layout: 'local_styles_only'
+    else
+      render params[:id]
+    end
   end
 end

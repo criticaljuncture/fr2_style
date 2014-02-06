@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <head>
+    <!-- FR TYPEKIT -->
+    <script type="text/javascript" src="https://use.typekit.com/qbb7wou.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- LOCAL CSS -->
+
+    <%= stylesheet_link_tag asset_path("application"), media: "all" %>
+
+
+
+    <!-- LOCAL JS -->
+
+    <%= javascript_include_tag asset_path("application"), media: "all" %>
+    <!--[if lt IE 8]><!-->
+      <%= javascript_include_tag asset_path("ie7/font_support"), media: "all" %>
+    <!--<![endif]-->
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+
+
