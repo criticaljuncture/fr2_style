@@ -23,6 +23,26 @@ table {
       font-size: 18px;
       color: #b4cf96;
     }
+    strong.fr-doc-title {
+      display:block;
+      font-size: 14px;
+    }
+    span.fr-doc-date {
+      display:block;
+      margin-bottom: 7px;
+      color: #aaa;
+      font-size: 14px;
+    }
+    dl.fr-monthly-overview {
+      width: 44%;
+      float: left;
+      font-size: 14px;
+      margin-right: 6%;
+
+      dd {
+        color: #428bca;
+      }
+    }
   }
   &.fr-table-stats {
     td {

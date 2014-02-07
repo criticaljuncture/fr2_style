@@ -14,3 +14,9 @@ h4 {
     }
   }
 }
+h5 {
+  &.underlined {
+    margin-top: 3px !important;
+    border-bottom: 1px solid #000;
+  }
+}
