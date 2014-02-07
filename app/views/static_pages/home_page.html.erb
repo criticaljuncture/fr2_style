@@ -54,7 +54,7 @@
 
 <div class="wrapper">
   <div class="container fixed">
-    <div class="clearfix"</div>
+    <div class="clearfix"></div>
       <div class="row nav-home-carousel">
         <ul class="col-md-3 nav">
           <li>
@@ -81,85 +81,82 @@
           </li>
         </ul>
         <div class="col-md-9">
-        </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="container fixed"></div>
-          <!-- FR.GOV AGENCY BROWSE (from nav) START -->
-          <table class="col-md-8 fr-table">
-            <thead>
+    <div class="row">
+        <!-- FR.GOV AGENCY BROWSE (from nav) START -->
+        <table class="fr-table-2-3 fr-table">
+          <thead>
+            <tr>
+              <th colspan="3">
+                <h4 class="with-icon">
+                  <span class="icon-fr2-Eco"></span>
+                  Explore Agencies
+                </h4>
+              </th>
+            </tr>
+            <tr>
+              <th></th>
+              <th width="5%" class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Refresh-7"></span></th>
+              <th width="5%" class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Chat"></span></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% 5.times do %>
               <tr>
-                <th colspan="3">
-                  <h4 class="with-icon">
-                    <span class="icon-fr2-Eco"></span>
-                    Explore Agencies
-                  </h4>
-                </th>
+                <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
+
+                <td class="count_7_days">
+                  <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
+                </td>
+
+                <td class="comments_recently_opened">
+                  <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
+                </td>
               </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <!-- FR.GOV AGENCY BROWSE (from nav) END -->
+        <!-- FR.GOV AGENCY BROWSE (from nav) START -->
+        <table class="fr-table-1-3 fr-push fr-table">
+          <thead>
+            <tr>
+              <th colspan="3">
+                <h4 class="with-icon">
+                  <span class="icon-fr2-Eco"></span>
+                  Explore Topics
+                </h4>
+              </th>
+            </tr>
+            <tr>
+              <th>
+              </th>
+              <th width="5%" class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Refresh-7"></span></th>
+              <th width="5%" class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Chat"></span></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% 5.times do %>
               <tr>
-                <th>
-                </th>
-                <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
-                <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
+                <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
+
+                <td class="count_7_days">
+                  <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
+                </td>
+
+                <td class="comments_recently_opened">
+                  <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
+                </td>
               </tr>
-            </thead>
-
-            <tbody>
-              <% 5.times do %>
-                <tr>
-                  <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
-
-                  <td class="count_7_days">
-                    <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
-                  </td>
-
-                  <td class="comments_recently_opened">
-                    <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
-                  </td>
-                </tr>
-              <% end %>
-            </tbody>
-          </table>
-          <!-- FR.GOV AGENCY BROWSE (from nav) END -->
-          <!-- FR.GOV AGENCY BROWSE (from nav) START -->
-          <table class="col-md-4 fr-table">
-            <thead>
-              <tr>
-                <th colspan="3">
-                  <h4 class="with-icon">
-                    <span class="icon-fr2-Eco"></span>
-                    Explore Topics
-                  </h4>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                </th>
-                <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
-                <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <% 5.times do %>
-                <tr>
-                  <td class="agency_name"><a href="/agencies/agriculture-department">Agriculture Department</a></td>
-
-                  <td class="count_7_days">
-                    <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_last_7&amp;utm_medium=dropdown&amp;utm_source=navigation">15</a>
-                  </td>
-
-                  <td class="comments_recently_opened">
-                    <a href="/articles/search?conditions%5Bagency_ids%5D%5B%5D=12&amp;conditions%5Bcomment_date%5D%5Bgte%5D=01%2F29%2F2014&amp;conditions%5Bpublication_date%5D%5Bgte%5D=01%2F22%2F2014&amp;utm_content=agencies_opened_recently&amp;utm_medium=dropdown&amp;utm_source=navigation">7</a>
-                  </td>
-                </tr>
-              <% end %>
-            </tbody>
-          </table>
-          <!-- FR.GOV AGENCY BROWSE (from nav) END -->
-        </div>
-      </div>
+            <% end %>
+          </tbody>
+        </table>
+        <!-- FR.GOV AGENCY BROWSE (from nav) END -->
+    </div>
 
 
       <div class="row">
@@ -186,7 +183,7 @@
       </div>
     <div class="row">
       <!-- FR.GOV AGENCY BROWSE (from nav) START -->
-      <table class="col-md-4 fr-table">
+      <table class="fr-table-1-3 fr-table">
         <thead>
           <tr>
             <th colspan="3">
@@ -196,10 +193,15 @@
               </h4>
             </th>
           </tr>
+            <tr>
+              <th colspan="3">
+                <input type="text" class="form-control fr-table-form" placeholder="Go to a specific agency">
+              </th>
+            </tr>
           <tr>
             <th></th>
-            <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
-            <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
+            <th width="5%" class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Refresh-7"></span></th>
+            <th width="5%" class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Chat"></span></th>
           </tr>
         </thead>
 
@@ -221,7 +223,7 @@
       </table>
       <!-- FR.GOV AGENCY BROWSE (from nav) END -->
       <!-- FR.GOV AGENCY BROWSE (from nav) START -->
-      <table class="col-md-8 fr-table">
+      <table class="fr-table-2-3 fr-push fr-table">
         <thead>
           <tr>
             <th colspan="3">
@@ -231,10 +233,15 @@
               </h4>
             </th>
           </tr>
+            <tr>
+              <th colspan="3">
+                <input type="text" class="form-control fr-table-form" placeholder="Go to a specific topic">
+              </th>
+            </tr>
           <tr>
             <th></th>
-            <th class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
-            <th class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Eco"></span></th>
+            <th width="5%" class="past_7_days" data-tooltip="Articles Published in the Last 7 Days" original-title=""><span class="icon-fr2-Refresh-7"></span></th>
+            <th width="5%" class="recently_opened" data-tooltip="Articles with Comment Periods Opened in the Last 7 Days" original-title=""><span class="icon-fr2-Chat"></span></th>
           </tr>
         </thead>
 

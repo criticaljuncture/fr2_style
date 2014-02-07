@@ -9,6 +9,9 @@
     margin: 0;
     padding-right: 0 !important;
     border-right: 2px solid #e0e0e0;
+    &.nav {
+      width: 20%;
+    }
   }
   li {
     position: relative;

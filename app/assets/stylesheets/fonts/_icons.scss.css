@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'fr2_icons';
-	src:url('fonts/fr2_icons.eot?-5734n8');
-	src:url('fonts/fr2_icons.eot?#iefix-5734n8') format('embedded-opentype'),
-		url('fonts/fr2_icons.woff?-5734n8') format('woff'),
-		url('fonts/fr2_icons.ttf?-5734n8') format('truetype'),
-		url('fonts/fr2_icons.svg?-5734n8#fr2_icons') format('svg');
+	src:url('fonts/fr2_icons.eot?oz4g8h');
+	src:url('fonts/fr2_icons.eot?#iefixoz4g8h') format('embedded-opentype'),
+		url('fonts/fr2_icons.woff?oz4g8h') format('woff'),
+		url('fonts/fr2_icons.ttf?oz4g8h') format('truetype'),
+		url('fonts/fr2_icons.svg?oz4g8h#fr2_icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="icon-fr2"], [class*=" icon-fr2"] {
+[class^="icon-fr2-"], [class*=" icon-fr2-"] {
 	font-family: 'fr2_icons';
 	speak: none;
 	font-style: normal;
@@ -23,38 +23,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-fr2-badge_x:before {
-	content: "\e012";
-}
-.icon-fr2-badge_plus:before {
-	content: "\e011";
-}
-.icon-fr2-alert_alt:before {
-	content: "\e014";
-}
-.icon-fr2-alert:before {
-	content: "\e013";
-}
-.icon-fr2-pi_subscription:before {
-	content: "\e003";
-}
-.icon-fr2-message_open:before {
-	content: "\e004";
-}
-.icon-fr2-message:before {
-	content: "\e015";
-}
-.icon-fr2-rss:before {
-	content: "\e017";
-}
 .icon-fr2-presidential_document:before {
 	content: "\e009";
 }
 .icon-fr2-menu_arrow:before {
 	content: "\e00d";
-}
-.icon-fr2-badge_check_mark:before {
-	content: "\e00f";
 }
 .icon-fr2-pc:before {
 	content: "\e019";
@@ -82,9 +55,6 @@
 }
 .icon-fr2-open_folder:before {
 	content: "\e005";
-}
-.icon-fr2-badge_forward_arrow:before {
-	content: "\e010";
 }
 .icon-fr2-document_open:before {
 	content: "\e018";
@@ -121,6 +91,48 @@
 }
 .icon-fr2-notice:before {
 	content: "\e008";
+}
+.icon-fr2-Refresh-7:before {
+	content: "\e608";
+}
+.icon-fr2-Chat:before {
+	content: "\e609";
+}
+.icon-fr2-Network-alt:before {
+	content: "\e60a";
+}
+.icon-fr2-quotes:before {
+	content: "\e60b";
+}
+.icon-fr2-badge_check_mark:before {
+	content: "\e00f";
+}
+.icon-fr2-badge_forward_arrow:before {
+	content: "\e010";
+}
+.icon-fr2-badge_plus:before {
+	content: "\e011";
+}
+.icon-fr2-badge_x:before {
+	content: "\e012";
+}
+.icon-fr2-alert:before {
+	content: "\e013";
+}
+.icon-fr2-alert_alt:before {
+	content: "\e014";
+}
+.icon-fr2-pi_subscription:before {
+	content: "\e003";
+}
+.icon-fr2-message_open:before {
+	content: "\e004";
+}
+.icon-fr2-message:before {
+	content: "\e015";
+}
+.icon-fr2-rss:before {
+	content: "\e017";
 }
 .icon-fr2-document_subscription:before {
 	content: "\e016";
