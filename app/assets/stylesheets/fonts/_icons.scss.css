@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'fr2_icons';
-	src:url('fonts/fr2_icons.eot?oz4g8h');
-	src:url('fonts/fr2_icons.eot?#iefixoz4g8h') format('embedded-opentype'),
-		url('fonts/fr2_icons.woff?oz4g8h') format('woff'),
-		url('fonts/fr2_icons.ttf?oz4g8h') format('truetype'),
-		url('fonts/fr2_icons.svg?oz4g8h#fr2_icons') format('svg');
+	src:url('fonts/fr2_icons.eot?-gzut3z');
+	src:url('fonts/fr2_icons.eot?#iefix-gzut3z') format('embedded-opentype'),
+		url('fonts/fr2_icons.woff?-gzut3z') format('woff'),
+		url('fonts/fr2_icons.ttf?-gzut3z') format('truetype'),
+		url('fonts/fr2_icons.svg?-gzut3z#fr2_icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -133,6 +133,9 @@
 }
 .icon-fr2-rss:before {
 	content: "\e017";
+}
+.icon-fr2-Rate:before {
+	content: "\e60c";
 }
 .icon-fr2-document_subscription:before {
 	content: "\e016";
