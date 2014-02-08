@@ -2,15 +2,36 @@ h4 {
   &.with-icon {
     margin-top:0 !important;
     margin-bottom: 10px;
-    color: #000;
+    color: #000 !important;
     text-transform: uppercase;
     border-bottom: 2px solid #000;
 
-    span {
+    [class^="icon-fr2-"], 
+    [class*=" icon-fr2-"] {
       font-size: 32px;
       margin-left: -38px;
       top: 7px;
       position: relative;
+    }
+
+    &.lowercase {
+      font-size: 17px;
+      text-transform: initial;
+
+      [class^="icon-fr2-"], 
+      [class*=" icon-fr2-"] {
+        font-size: 28px;
+        margin-left: -34px;
+      }
+    }
+
+    a.more-details {
+      float: right;
+      font-weight: normal;
+      font-size: 13px !important;
+      position: relative;
+      margin-top: 13px;
+      margin-right: 5px;
     }
   }
 }
