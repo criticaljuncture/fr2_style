@@ -5,12 +5,14 @@
 .nav-home-carousel {
   @include border-radius(3px);
   background-color: #f1f1f1;
+  
   ul {
     margin: 0;
     padding-right: 0 !important;
     border-right: 2px solid #e0e0e0;
     &.nav {
       width: 20%;
+      float: left;
     }
   }
   li {
@@ -39,6 +41,43 @@
     &:hover, &.hover {
       color: #fff;
       background-color: #f6a428;
+    }
+  }
+  .nav-content {
+    float: left;
+    width: 80%;
+    height: 10px;
+
+    .carousel-indicators {
+      display: table; 
+      margin: 0 auto;
+      margin-top: 10px;
+      li {
+        @include border-radius(20px);
+        @include square(12px);
+        padding: 0;
+        background-color: #ccc;
+        display: inline-block; 
+        float: left;
+        margin: 0 4px;
+      
+        &.active {
+          background: #888;
+        }
+      }
+    }
+    .carousel-item {
+      padding: 15px;
+
+      img {@include border-radius(10px);}
+      p {
+        margin-top: 8px;
+        line-height: 20px;
+      }
+    }
+    .carousel-list {
+      padding-top: 10px;
+      width: 36.666667%;
     }
   }
 }
