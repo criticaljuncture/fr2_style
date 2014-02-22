@@ -1,0 +1,76 @@
+@mixin fr-top-header($main-color, $secondary-color) {
+  background-color: $secondary-color;
+  
+  a { 
+    color: $main-color;
+  }
+  .fr-head-doc-label {
+    background-color: $main-color;
+  }
+  .fr-head-doc-meta {
+    background-color: $secondary-color;
+  }
+}
+
+
+.fr-head-doc {
+  .fr-head-doc-label {
+    height: 50px;
+    color: #fff;
+
+    i {
+      @include opacity(.8);
+      font-size: 36px;
+      position: relative;
+      top: 7px;
+      margin-right: 5px;
+    }
+    h4 {
+      margin: 0 !important;
+      font-weight: 500;
+      display: inline-block;
+      text-decoration: underline;
+    }
+  }
+
+  .fr-head-doc-meta {
+    font-size: 15px;
+
+    ul {
+      padding: 0;
+    }
+    li {
+      float: left;
+      list-style-type: none;
+      margin-right: 15px;
+      line-height: 50px;
+    }
+    a {
+      text-decoration: underline;
+    }
+    h5 {
+      font-size: 15px;
+      margin-bottom: 3px;
+      color: #444;
+    }    
+    p {
+      font-family: $font-family-sans-serif;
+      margin: 0;
+      font-size: 15px;
+      padding: 10px 0;
+
+      a {
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+
+  &.fr-head-doc-enhanced {
+    @include fr-top-header($color-enhanced, $color-enhanced-light);
+  }
+
+  &.fr-head-doc-inspection {
+    @include fr-top-header($color-inspection, $color-inspection-light);
+  }
+}

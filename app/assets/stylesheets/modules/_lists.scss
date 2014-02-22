@@ -1,0 +1,35 @@
+.fr-topic-list {
+  font-size: 14px;
+  &.with-bullets {
+    dd, li {
+      &:before {
+        content: "◼︎";
+        color: $color-inspection-light-alt;
+        padding-right: 7px;
+      }
+    }
+  }
+  &.with-stats {
+    ul {
+      border:0;
+      margin-bottom: 4px;
+    }
+    li {
+      padding: 0;
+      margin: 0;
+      color: #999;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+
+      &:hover{
+        background: transparent;
+        color: #444;
+      }
+
+      i.icon-fr2-Chat {
+        color: $color-enhanced;
+      }
+    }
+  }
+}

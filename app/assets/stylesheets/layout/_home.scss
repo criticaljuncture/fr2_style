@@ -18,7 +18,7 @@
   li {
     position: relative;
     color: #999;
-    padding: 12px 0px 12px 55px;
+    padding: 15px 0px 15px 55px;
     font-weight: bold;
     list-style-type: none;
     font-size: 16px;
@@ -82,4 +82,7 @@
   }
 }
 
-#home-aid-box {}
+.home-search-embedded {
+  padding: 10px 10px 10px 30px;
+  margin: 20px 0 !important;
+}

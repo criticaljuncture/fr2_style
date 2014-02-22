@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'fr2_icons';
-	src:url('fonts/fr2_icons.eot?-z6wohk');
-	src:url('fonts/fr2_icons.eot?#iefix-z6wohk') format('embedded-opentype'),
-		url('fonts/fr2_icons.woff?-z6wohk') format('woff'),
-		url('fonts/fr2_icons.ttf?-z6wohk') format('truetype'),
-		url('fonts/fr2_icons.svg?-z6wohk#fr2_icons') format('svg');
+	src:url('fonts/fr2_icons.eot?-78tcze');
+	src:url('fonts/fr2_icons.eot?#iefix-78tcze') format('embedded-opentype'),
+		url('fonts/fr2_icons.woff?-78tcze') format('woff'),
+		url('fonts/fr2_icons.ttf?-78tcze') format('truetype'),
+		url('fonts/fr2_icons.svg?-78tcze#fr2_icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -55,9 +55,6 @@
 }
 .icon-fr2-open_folder:before {
 	content: "\e005";
-}
-.icon-fr2-document_open:before {
-	content: "\e018";
 }
 .icon-fr2-flag:before {
 	content: "\e000";
@@ -143,6 +140,81 @@
 .icon-fr2-message:before {
 	content: "\e015";
 }
+.icon-fr2-document_open:before {
+	content: "\e018";
+}
+.icon-fr2-Search:before {
+	content: "\e625";
+}
+.icon-fr2-Calendar-alt:before {
+	content: "\e626";
+}
 .icon-fr2-document_subscription:before {
 	content: "\e016";
+}
+.icon-fr2-sharing:before {
+	content: "\e60f";
+}
+.icon-fr2-conversation-alt:before {
+	content: "\e610";
+}
+.icon-fr2-print:before {
+	content: "\e611";
+}
+.icon-fr2-map:before {
+	content: "\e612";
+}
+.icon-fr2-bulleted-list:before {
+	content: "\e614";
+}
+.icon-fr2-bookmark:before {
+	content: "\e615";
+}
+.icon-fr2-doc-pdf:before {
+	content: "\e616";
+}
+.icon-fr2-doc-pi-pdf:before {
+	content: "\e617";
+}
+.icon-fr2-doc-xml:before {
+	content: "\e618";
+}
+.icon-fr2-stars:before {
+	content: "\e619";
+}
+.icon-fr2-pen:before {
+	content: "\e61a";
+}
+.icon-fr2-book:before {
+	content: "\e61c";
+}
+.icon-fr2-molecular:before {
+	content: "\e61d";
+}
+.icon-fr2-megaphone:before {
+	content: "\e61e";
+}
+.icon-fr2-legal:before {
+	content: "\e61f";
+}
+.icon-fr2-books:before {
+	content: "\e620";
+}
+.icon-fr2-map-alt:before {
+	content: "\e621";
+}
+.icon-fr2-NARA1985Seal:before {
+	content: "\e613";
+}
+.icon-fr2-link:before {
+	content: "\e622";
+}
+.icon-fr2-facebook:before {
+	content: "\e623";
+}
+.icon-fr2-book-alt-2:before {
+	content: "\e61b";
+}
+.icon-fr2-stop-hand:before {
+	content: "\e624";
 }
