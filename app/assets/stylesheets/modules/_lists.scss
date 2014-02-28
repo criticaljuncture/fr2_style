@@ -2,6 +2,7 @@
   font-size: 14px;
   &.with-bullets {
     dd, li {
+      list-style-type: none;
       &:before {
         content: "◼︎";
         color: $color-inspection-light-alt;
@@ -9,12 +10,18 @@
       }
     }
   }
+  &.two-col {
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+  }
   &.with-stats {
     ul {
       border:0;
       margin-bottom: 4px;
     }
     li {
+      width: 100%;
       padding: 0;
       margin: 0;
       color: #999;
