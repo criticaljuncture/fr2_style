@@ -13,13 +13,24 @@
     }
   }
 }
-.nav-home-coursel .nav-content {
+.nav-home-carousel{
   .carousel-item {
-    width: 428px ;
+    width: 436px ;
     float: left;
   }
   .carousel-list {
     width: 292px;
     float: left;
+    &.fr-push {
+      position: relative;
+      left: 4.3%;
+    }
+  }
+}
+h3, 
+h4 {
+  &.with-icon .more-details{
+    font-size: 13px;
+    text-transform: none;
   }
 }
